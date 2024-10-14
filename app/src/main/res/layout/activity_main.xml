@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewResultInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Введіть дані про хімічний склад:"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Input Field for a -->
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вміст вуглецю: "
+        android:inputType="numberDecimal" />
+
+    <!-- Input Field for b -->
+    <EditText
+        android:id="@+id/editTextB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вміст водню: "
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вміст кисню: "
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вміст сірки: "
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Input Field for c -->
+    <EditText
+        android:id="@+id/editTextE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вміст нижчу теплоту згоряння: "
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вміст вологи: "
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вміст золи: "
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вміст ванадію: (мг/кг)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вирахувати"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/textViewVmist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Склад робочої маси: "
+        android:textSize="18sp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/textViewLowerTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нижча теплота згоряння для робочої маси: "
+        android:textSize="18sp"
+        android:layout_marginTop="14dp" />
+
+</LinearLayout>
